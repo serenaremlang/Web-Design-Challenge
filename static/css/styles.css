@@ -1,0 +1,45 @@
+/* Basic Styling */
+
+h1,h2,h3,h4,h5 {color:#4aaaa5;}
+
+body {background-color: #ededed;}
+
+a, a:hover {text-decoration: none;}
+  
+a:hover {opacity: 0.7;}
+
+th {text-align: left;}
+
+/* Classes */
+.custom-bg {background-color:#4aaaa5; padding:0px 10px; }
+
+.header-colour {color:#4aaaa5;}
+
+.brdr {border:1px solid #4aaaa5;}
+
+.txt-cntr {text-align:center;}
+
+.txty-boxy-box {background-color: #fff;padding:40px 30px;}
+
+.hr-lrg-mrg {margin:2em auto}
+
+.mnu:hover {background-color:#e7e7e7}
+
+.img-nrml {width:600px;}
+
+.img-sml {width:200px; height:200px;}
+
+.img-thumbnail {width:120px; height:120px;}
+
+.stacked-seperator {display:none;}
+
+/* Media queries */
+
+@media (max-width: 992px) {
+    .bg-light {background-color:#4aaaa5 !important;}
+} 
+
+@media (max-width: 1380px) {
+    .stacked-seperator {display:block;}
+}
+
