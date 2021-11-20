@@ -1,6 +1,6 @@
 /* Basic Styling */
 
-h1,h2,h3,h4,h5 {color:#4aaaa5; font-family: Georgia; font-style:bold;}
+h1,h2,h3,h4,h5 {color:#4aaaa5; font-family:Georgia; font-weight: bold;}
 
 body {background-color: #ededed;}
 
