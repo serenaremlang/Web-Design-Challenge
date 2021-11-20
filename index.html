@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="static/css/styles.css">
 </head>
 
-<body>
+<body class="body-small-back">
   <nav class="navbar navbar-light navbar-expand-lg bg-light">
       <div class="container-fluid">
         <a class="navbar-brand custom-bg" href="index.html" style="color:#fff;position:absolute;height:100%;line-height:52px;z-index: 99999;">Latitude</a>
@@ -62,7 +62,7 @@
         <div class="clearfix txty-boxy-box">
           <h2>Summary: Latitude vs. X</h2>
           <hr class="hr-lrg-mrg"/>
-          <img src="static/images/temp.png" class="col-md-6 float-md-start mb-3 ms-md-3 img-sqr-sml" alt="Cloudy Map"/>
+          <img src="static/images/temp.png" class="col-md-6 float-md-start mb-3 ms-md-3 img-sml" alt="Cloudy Map"/>
           <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
             To accomplish this analysis, we first pulled data from the OpenWeather Map API to assemble a dataset on over 500 cities.</p>
             
@@ -78,23 +78,23 @@
         <div class='txty-boxy-box'>
           <h4>Visualizations</h4>
           <hr class="hr-lrg-mrg"/>
-
+          <!-- resize depending on screen size -->
           <div class="row row-cols-1 row-cols-sm-4 row-cols-lg-2">
 
             <div class="col d-flex justify-content-center">
-              <a href="plots/cloudiness.html"><img src="static/images/cloudiness.png" class="img-thumbnail" alt="Cloudy Map"></a>
+              <a href="plots/cloudiness.html"><img src="static/images/cloudiness.png" class="img-thumbnail" alt="Cloudy Map"/></a>
             </div>
 
             <div class="col d-flex justify-content-center">
-              <a href="plots/humidity.html"><img src="static/images/humidity.png" class="img-thumbnail" alt="Humidity Map"></a>
+              <a href="plots/humidity.html"><img src="static/images/humidity.png" class="img-thumbnail" alt="Humidity Map"/></a>
             </div>
 
             <div class="col d-flex justify-content-center">
-              <a href="plots/temp.html"><img src="static/images/temp.png" class="img-thumbnail" alt="Tempurature Map"></a>
+              <a href="plots/temp.html"><img src="static/images/temp.png" class="img-thumbnail" alt="Tempurature Map"/></a>
             </div>
 
             <div class="col d-flex justify-content-center">
-              <a href="plots/wind.html"><img src="static/images/wind.png" class="img-thumbnail" alt="Wind Speed Map"></a>
+              <a href="plots/wind.html"><img src="static/images/wind.png" class="img-thumbnail" alt="Wind Speed Map"/></a>
             </div>
 
           </div>
