@@ -11,79 +11,83 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand custom-bg" href="index.html" style="color:#fff;position:absolute;height:100%;line-height:52px;z-index: 99999;">Latitude</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand custom-bg" href="index.html" style="color:#fff;position:absolute;height:100%;line-height:52px;z-index: 99999;">Latitude</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        
+        <div class="offcanvas offcanvas-end" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
           
-          
-          <div class="offcanvas offcanvas-end" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
-            
-            <div class="offcanvas-header">
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Latitude</h5>
-              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Latitude</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
 
-            <div class="offcanvas-body">
-              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3"> 
 
-                <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                    Plots
-                  </a>
-                  <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item" href="plots/temp.html">Max Temperature</a></li>
-                    <li><a class="dropdown-item" href="plots/humidity.html">Humidity</a></li>
-                    <li><a class="dropdown-item" href="plots/cloudiness.html">Cloudiness</a></li>
-                    <li><a class="dropdown-item" href="plots/wind.html">Wind Speed</a></li>
-                  </ul>
-                </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Plots
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+                  <li><a class="dropdown-item" href="plots/temp.html">Max Temperature</a></li>
+                  <li><a class="dropdown-item" href="plots/humidity.html">Humidity</a></li>
+                  <li><a class="dropdown-item" href="plots/cloudiness.html">Cloudiness</a></li>
+                  <li><a class="dropdown-item" href="plots/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
 
-                <li class="nav-item">
-                  <a class="nav-link" href="comparison.html">Comparison</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="data.html">Data</a>
-                </li>
+              <li class="nav-item">
+                <a class="nav-link" href="comparison.html">Comparison</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="data.html">Data</a>
+              </li>
 
-              </ul>
-            </div>
+            </ul>
           </div>
         </div>
-      </nav>
+      </div>
+  </nav>
 
-    <section>
-        <h1>Summary: Latitude vs. X</h1>
+  <div class="container">
+    <!-- Main box-->
+    <div class="row"><div class="col"><div style="height:40px"></div></div></div>
+    <div class="row row-cols-1 row-cols-lg-2">
+
+      <div class='col col-lg-8'>
+        <div class="clearfix content-box">
+          <h2>Summary: Latitude vs. X</h2>
+          <hr class="hr-lrg-mrg" />
+          <img src="static/images/temp.png" class="col-md-6 float-md-start mb-3 ms-md-3 img-sqr-sml" alt="Cloudy Map"/>
+          <p>TEXT GOES HERE</p>
+          
+        </div>
+      </div>
+
+
+
+      <!-- Visualizations section -->
+      <h4>Visualizations</h4>
+      <hr class="hr-lrg-mrg" />
         <article>
-        <a target="_blank" href="static/images/cloudyiness.png">
-          <img src="static/images/cloudyiness.png" alt="Cloudy Map">
-        </a>
-        <p><em>Cloudy Map</em></p>
+          <a href="plots/cloudiness.html"><img src="static/images/cloudyiness.png" alt="Cloudy Map"></a>
         </article>
-        <hr>
         <article>
-        <a target="_blank" href="assets/images/humiditymap.png">
-        <img src="assets/images/humiditymap.png" alt="Humidity Map">
-        </a>
-        <p><em>Humidity Map</em></p>
+          <a href="plots/humidity.html"><img src="assets/images/humiditymap.png" alt="Humidity Map"></a>
         </article>
-        <hr>
         <article>
-          <a href="assets/images/temperaturemap.png">
-          <img target="_blank" src="assets/images/temperaturemap.png" alt="Tempurature Map">
-          </a>
-          <p><em>Temperature Map</em></p>
+          <a href="plots/temp.html"><img src="assets/images/temperaturemap.png" alt="Tempurature Map"></a>
         </article>
-        <hr>
-        <!-- an example using figure/ficaption -->
-        <figure>
-          <a target="_blank" href="assets/images/windmap.png">
-          <img src="assets/images/windmap.png" alt="Wind Map">
-          </a>
-          <figcaption><em>Wind Map</em></figcaption>
-        </figure>
-      </section>
+        <article>
+          <a href="plots/wind.html"><img src="static/images/wind.png" alt="Wind Speed Map"></a>
+        </article>
+    </div> 
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
